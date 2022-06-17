@@ -1,0 +1,5 @@
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project2\DAL\obj\Debug\net6.0\TEST.csproj.AssemblyReference.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project2\DAL\obj\Debug\net6.0\TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project2\DAL\obj\Debug\net6.0\TEST.AssemblyInfoInputs.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project2\DAL\obj\Debug\net6.0\TEST.AssemblyInfo.cs
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project2\DAL\obj\Debug\net6.0\TEST.csproj.CoreCompileInputs.cache

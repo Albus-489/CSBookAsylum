@@ -1,0 +1,394 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\WEBAPI3\\WEBAPI3.csproj": {}
+  },
+  "projects": {
+    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj",
+        "projectName": "App",
+        "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj",
+        "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
+        "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.0.3, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
+        "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Project2\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Project2\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
+        "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj": {
+                "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Project2\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Project2\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Project2\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
+        "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Project2\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\WEBAPI3\\WEBAPI3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\WEBAPI3\\WEBAPI3.csproj",
+        "projectName": "WEBAPI3",
+        "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\WEBAPI3\\WEBAPI3.csproj",
+        "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
+        "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\WEBAPI3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj": {
+                "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj"
+              },
+              "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
