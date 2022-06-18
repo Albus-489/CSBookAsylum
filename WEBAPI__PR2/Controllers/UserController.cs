@@ -3,6 +3,7 @@ using BLL_Project2.DTO.Requests;
 using BLL_Project2.DTO.Responses;
 using BLL_Project2.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Project2.DAL.Interfaces;
 using Project2.WEBAPI_PR2.JWTManager;
 using System.Security.Claims;
 using WEBAPI_Project2.Helpers;
@@ -16,19 +17,34 @@ namespace WEBAPI_Project2.Controllers
         private readonly IIdentityService identityService;
         private readonly IIdentity _identity;
         private IConfiguration _config;
+        private readonly IUserService _userservice;
+        private IUnitOfWork uow;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IIdentityService identityService, IIdentity identity, IConfiguration config)
+        public UserController(IIdentityService identityService, IIdentity identity, IConfiguration config, IUnitOfWork uow, ILogger<UserController> logger)
         {
             this.identityService = identityService;
             this._config = config;
             _identity = identity;
-
+            this.uow = uow;
+            _logger = logger;
         }
 
         [HttpGet("Get")]
-        public async Task<ActionResult<string>> GetCurrentUser()
+        public async Task<ActionResult> GetAllUsers()
         {
-            return Ok("Simple GET");
+            try
+            {
+                var results = _userservice.GetAllAsync();
+                //usrSrvcs.Commit();
+                _logger.LogInformation($"Returned all AspNetUsers from database.");
+                return Ok(results);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Transaction Failed! Something went wrong inside GetAllUsers() action: {ex.Message}");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error");
+            }
         }
 
         [Authorize]
