@@ -35,7 +35,7 @@ namespace WEBAPI_Project2.Controllers
         {
             try
             {
-                var results = _userservice.GetAllAsync();
+                var results = uow.UserManager.Users.ToList();
                 //usrSrvcs.Commit();
                 _logger.LogInformation($"Returned all AspNetUsers from database.");
                 return Ok(results);
