@@ -6,7 +6,10 @@ namespace Project1.BLL.Configs
 {
     public static class ServicesRegistrator
     {
-        public static IServiceCollection AddServices(this IServiceCollection services) => services.AddTransient<IUsersServices, UsersService>()
+        public static IServiceCollection AddServices(this IServiceCollection services) => services
+            .AddTransient<IBranchesServices, BranchService>()
+            .AddTransient<IThemeMessageServices, ThemeMessagesService>()
+            .AddTransient<IThemesServices, ThemesService>()
 
         ;
     }

@@ -12,11 +12,10 @@ namespace Project1.BLL.DTO.Res
         public int id { get; set; }
         public string name { get; set; }
         public string? message { get; set; } // message obj collection
-        public string? headerPicture { get; set; }
+        public string? image { get; set; }
 
         public int branch { get; set; }
         public Branches Brnch { get; set; }
         public string creator { get; set; }
-        public AspNetUsers user { get; set; }
     }
 }

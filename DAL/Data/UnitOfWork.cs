@@ -14,28 +14,30 @@ namespace Project1.DAL.Data
     {
         private IDbConnection _connection;
         private IDbTransaction _transaction;
-        private IUsersRepository _usersRepository;
+        //private IUsersRepository _usersRepository;
         private IBranchesRepository _branchesRepository;
         private IThemesRepository _themesRepository;
         private IThemeMessageRepo _themeMessageRepo;
 
         private bool _disposed;
 
-        public UnitOfWork(SqlConnection connection, 
-                         IDbTransaction transaction)
+        public UnitOfWork(
+            SqlConnection connection, 
+            IDbTransaction transaction
+            )
         {
             _connection = connection;
             _transaction = transaction;
         }
 
 
-        public IUsersRepository UsersRepository
-        {
-            get
-            {
-                return _usersRepository ?? (_usersRepository = new UsersRepository(_transaction));
-            }
-        }
+        //public IUsersRepository UsersRepository
+        //{
+        //    get
+        //    {
+        //        return _usersRepository ?? (_usersRepository = new UsersRepository(_transaction));
+        //    }
+        //}
         public IBranchesRepository BranchesRepository
         {
             get
@@ -81,7 +83,7 @@ namespace Project1.DAL.Data
 
         private void resetRepositories()
         {
-            _usersRepository = null;
+            //_usersRepository = null;
             _branchesRepository = null;
         }
 

@@ -16,9 +16,9 @@ namespace Project2.DAL.Interfaces
         public IAuthor Authors { get; }
         public IComment Comments { get; }
         public ICollection Collections { get; }
-        public UserManager<Users> UserManager { get; }
-        public RoleManager<IdentityRole> RoleManager { get; }
-        public SignInManager<Users> SignInManager { get; }
+        //public UserManager<Users> UserManager { get; }
+        //public RoleManager<IdentityRole> RoleManager { get; }
+        //public SignInManager<Users> SignInManager { get; }
 
         public DBContext DBContext { get; }
 

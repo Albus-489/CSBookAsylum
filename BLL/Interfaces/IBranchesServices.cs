@@ -8,11 +8,11 @@ using Project1.BLL.DTO.Res;
 
 namespace Project1.BLL.Interfaces
 {
-    public interface IBranchesServices<T>
+    public interface IBranchesServices
     {
-        Task<IEnumerable<BranchesResDTO>> GetAllByOrderIdAsync(long id);
-        Task<long> AddAsync(BranchesReqDTO post);
-        Task UpdateAsync(BranchesReqDTO post);
+        Task<IEnumerable<BranchesResDTO>> GetAllBranches();
+        Task AddAsync(BranchesReqDTO branch);
+        Task UpdateAsync(BranchesReqDTO branch);
         Task DeleteAsync(long id);
     }
 }

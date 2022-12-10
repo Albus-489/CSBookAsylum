@@ -21,7 +21,7 @@ namespace Project2.DAL
         public IComment Comments { get; }
         public ICollection Collections { get; }
         public UnitOfWork(IBook book, IAuthor author, IComment comment, ICollection collection,
-            DBContext dbContext, UserManager<Users> userManager,RoleManager<IdentityRole> roleManager,SignInManager<Users> signInManager)
+            DBContext dbContext)
         {
             _dbContext = dbContext;
 
@@ -30,14 +30,14 @@ namespace Project2.DAL
             Comments = comment;
             Collections = collection;
 
-            UserManager = userManager;
-            RoleManager = roleManager;
-            SignInManager = signInManager;
+            //UserManager = userManager;
+            //RoleManager = roleManager;
+            //SignInManager = signInManager;
         }
 
-        public UserManager<Users> UserManager { get; }
-        public RoleManager<IdentityRole> RoleManager { get; }
-        public SignInManager<Users> SignInManager { get; }
+        //public UserManager<Users> UserManager { get; }
+        //public RoleManager<IdentityRole> RoleManager { get; }
+        //public SignInManager<Users> SignInManager { get; }
         public DBContext DBContext { get { return _dbContext; } }
 
 

@@ -18,7 +18,7 @@ namespace Project2.DAL.Configs
 
             builder.HasOne(o => o.author)
                 .WithMany(u => u.books)
-                .HasForeignKey(o => o.authorId);
+                .HasForeignKey(o => o.author_id);
 
             builder.Property(o => o.name).HasMaxLength(100);
 

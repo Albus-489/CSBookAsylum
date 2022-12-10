@@ -9,31 +9,27 @@ namespace Project1.BLL.Configs
     {
         public AutoMapperProfile()
         {
-            CreateUserMaps();
             CreateBrancheMaps();
             CreateThemeMaps();
             CreateThemeMessageMaps();
         }
 
-        private void CreateUserMaps()
-        {
-            CreateMap<AspNetUsers, UsersResDTO>();
-            CreateMap<UsersResDTO, AspNetUsers>();
-        }
-
         private void CreateBrancheMaps()
         {
             CreateMap<Branches, BranchesResDTO>();
+            CreateMap<BranchesReqDTO, Branches>();
         }
 
         private void CreateThemeMaps()
         {
             CreateMap<Themes, ThemesResDTO>();
+            CreateMap<ThemesReqDTO, Themes>();
         }
 
         private void CreateThemeMessageMaps()
         {
             CreateMap<ThemeMessage, ThemeMessageResDTO>();
+            CreateMap<ThemeMessageReqDTO, ThemeMessage>();
         }
     }
 }

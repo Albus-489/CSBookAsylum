@@ -20,7 +20,7 @@ namespace Project2.DAL.Seeding
                 name = "Preview book 1",
                 genre = "Preview genre 1",
                 rating = 2,
-                descriptionInfo = "No info 1"
+                description = "No info 1"
             },
             new Books
             {
@@ -28,7 +28,7 @@ namespace Project2.DAL.Seeding
                 name = "Preview book 2",
                 genre = "Preview genre 2",
                 rating = 90,
-                descriptionInfo = "No info 2"
+                description = "No info 2"
             }
 
         };

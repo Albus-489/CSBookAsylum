@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLLP2.DTO.Req;
+using BLLP2.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Project2.DAL.Entities;
 using Project2.DAL.Interfaces;
 
@@ -9,56 +11,85 @@ namespace WEBAPI__PR2.Controllers
     public class BooksController : ControllerBase
     {
         private readonly ILogger<Books> _logger;
-        private readonly IUnitOfWork UOW;
+        //private readonly IUnitOfWork UOW;
+        private readonly IBookService _bookService;
 
-        public BooksController(IUnitOfWork uow, ILogger<Books> logger)
+        public BooksController(IBookService bookService, ILogger<Books> logger)
         {
-            this.UOW = uow;
+            //this.UOW = uow;
             _logger = logger;
+            _bookService = bookService;
         }
 
-        [HttpGet("Get")]
-        public async Task<ActionResult<IEnumerable<Books>>> GetAllCategoriesAsync()
+        [HttpPost]
+        public async Task<IActionResult> AddBookAsync([FromBody] BookReqDTO requestDto)
         {
             try
             {
-                var results = await UOW.Books.GetAllAsync();
-                //UOW.Commit();
-                _logger.LogInformation($"Returned all books from database.");
+                await _bookService.AddAsync(requestDto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateBookAsync([FromBody] BookReqDTO requestDto)
+        {
+            try
+            {
+                await _bookService.UpdateAsync(requestDto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBookAsync(int id)
+        {
+            try
+            {
+                await _bookService.DeleteAsync(id);
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetBookById(int id)
+        {
+            try
+            {
+                var result = await _bookService.GetByIdAsync(id);
+
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                var results = await _bookService.GetAllAsync();
                 return Ok(results);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                _logger.LogError($"Transaction Failed! Something went wrong inside GetAll() action: {ex.Message}");
-                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error");
-            }
-        }
-
-        [HttpPost("Create")]
-        public async Task<ActionResult<long>> Post([FromBody] Books book)
-        {
-
-            try
-            {
-                if (book == null)
-                {
-                    _logger.LogError("Comment object sent from client is null.");
-                    return BadRequest("Comment object is null");
-                }
-                if (!ModelState.IsValid)
-                {
-                    _logger.LogError("Invalid Comment object sent from client.");
-                    return BadRequest("Invalid model object");
-                }
-                await UOW.Books.AddAsync(book);
-                //_unitOfWOrk.Commit();
-                //_logger.LogInformation($"Add post by id {branch.id}");
-                return Ok("Book has been added");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Transaction Failed! \nSomething went wrong insede AddAsync action: {ex.Message}");
-                return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
             }
         }
 

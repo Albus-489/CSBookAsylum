@@ -10,9 +10,8 @@ namespace Project2.DAL.Entities
     {
         public string text { get; set; }
         public int rating { get; set; }
-        public int bookID { get; set; }
+        public int book_id { get; set; }
         public Books book { get; set; }
-        public string userID { get; set; }
-        public Users user { get; set; }
+        public string? user_id { get; set; }
     }
 }

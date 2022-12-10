@@ -1,5 +1,5 @@
-﻿using BLL_Project2.DTO.Requests;
-using BLL_Project2.Interfaces;
+﻿using BLLP2.DTO.Req;
+using BLLP2.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Project2.DAL.Entities;
 using Project2.DAL.Interfaces;
@@ -21,16 +21,40 @@ namespace WEBAPI__PR2.Controllers
             _authorservice = authorservice;
         }
 
-        [HttpPost("CreateAuthor")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> AddOfferAsync([FromBody] AuthorReqDTO author)
+        [HttpPost]
+        public async Task<IActionResult> AddAuthorAsync([FromBody] AuthorReqDTO requestDto)
         {
-
             try
             {
-                await _authorservice.AddAsync(author);
+                await _authorservice.AddAsync(requestDto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateAuthorAsync([FromBody] AuthorReqDTO requestDto)
+        {
+            try
+            {
+                await _authorservice.UpdateAsync(requestDto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAuthorAsync(int id)
+        {
+            try
+            {
+                await _authorservice.DeleteAsync(id);
 
                 return Ok();
             }
@@ -40,16 +64,12 @@ namespace WEBAPI__PR2.Controllers
             }
         }
 
-        [HttpGet("GetAll")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetAllAsync()
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAuthorById(int id)
         {
-
             try
             {
-                var result = await _authorservice.GetAllAsync();
+                var result = await _authorservice.GetByIdAsync(id);
 
                 return Ok(result);
             }
@@ -59,19 +79,13 @@ namespace WEBAPI__PR2.Controllers
             }
         }
 
-
-        [HttpDelete("DeleteAuthor")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> DeleteOfferAsync([FromBody] int authorID)
+        [HttpGet]
+        public async Task<IActionResult> GetAllAsync()
         {
-
             try
             {
-                await _authorservice.DeleteAsync(authorID);
-
-                return Ok("Author removed");
+                var results = await _authorservice.GetAllAsync();
+                return Ok(results);
             }
             catch (Exception e)
             {

@@ -9,7 +9,6 @@ namespace Project1.DAL.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        public IUsersRepository UsersRepository { get; }
         public IBranchesRepository BranchesRepository { get; }
         public IThemesRepository ThemesRepository { get; }
         public IThemeMessageRepo ThemeMessageRepo { get; }

@@ -9,5 +9,12 @@ namespace Project1.BLL.DTO.Req
 {
     public class ThemeMessageReqDTO
     {
+        public int id { get; set; }
+        public string text { get; set; }
+        public int? rating { get; set; }
+        public string? image { get; set; }
+        public int theme { get; set; }
+        public Themes Thme { get; set; }
+        public string user { get; set; }
     }
 }

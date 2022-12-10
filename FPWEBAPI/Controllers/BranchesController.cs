@@ -1,5 +1,11 @@
 using Project1.DAL.Interfaces;
 using Project1.DAL.Models;
+using Project1.BLL.Configs;
+using Project1.BLL.Services;
+using Project1.BLL.DTO.Req;
+using Project1.BLL.DTO.Res;
+using Project1.BLL.Interfaces;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace FPWEBAPI.Controllers
@@ -8,28 +14,24 @@ namespace FPWEBAPI.Controllers
     [Route("[controller]")]
     public class BranchesController : ControllerBase
     {
-        private readonly ILogger<BranchesController> _logger;
-        private IUnitOfWork  _uow;
-        public BranchesController(ILogger<BranchesController> logger, IUnitOfWork uow)
+        private IBranchesServices _branchService;
+
+        public BranchesController(IBranchesServices branchService)
         {
-            _logger = logger;
-            _uow = uow;
+            _branchService = branchService;
         }
 
         // GET: api/Branches/GetAllBranches
         [HttpGet("GetAllBranches")]
-        public async Task<ActionResult<IEnumerable<Branches>>> GetAllCategoriesAsync()
+        public async Task<ActionResult<IEnumerable<BranchesResDTO>>> GetAllBranchesAsync()
         {
             try
             {
-                var results = await _uow.BranchesRepository.GetAllAsync();
-                _uow.Commit();
-                _logger.LogInformation($"Returned all branhes from database.");
+                var results = await _branchService.GetAllBranches();
                 return Ok(results);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Transaction Failed! Something went wrong inside GetAllBranches() action: {ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error");
             }
         }
@@ -40,59 +42,40 @@ namespace FPWEBAPI.Controllers
         {
             try
             {
-                await _uow.BranchesRepository.DeleteAsync(id);
-                //_unitOfWOrk.Commit();
-                _logger.LogInformation($"Delete branch by id {id}");
+                await _branchService.DeleteAsync(id);
                 return Ok();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Transaction Failed! \nSomething want wrong insede DeleteAsync action: {ex.Message}");
-                return StatusCode(StatusCodes.Status500InternalServerError);
-            }
-        }
-
-        [HttpPost("Create")]
-        public async Task<ActionResult<long>> Post([FromBody] Branches branch)
-        {
-
-            try
-            {
-                if (branch == null)
-                {
-                    _logger.LogError("Comment object sent from client is null.");
-                    return BadRequest("Comment object is null");
-                }
-                if (!ModelState.IsValid)
-                {
-                    _logger.LogError("Invalid Comment object sent from client.");
-                    return BadRequest("Invalid model object");
-                }
-                var result = await _uow.BranchesRepository.AddAsync(branch);
-                //_unitOfWOrk.Commit();
-                //_logger.LogInformation($"Add post by id {branch.id}");
-                return (result);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Transaction Failed! \nSomething went wrong insede AddAsync action: {ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error");
             }
         }
 
-        [HttpGet("Get/{id}")]
-        public async Task<ActionResult> GetAsync(long id)
+        [HttpPost("Create")]
+        public async Task<ActionResult<long>> Post([FromBody] BranchesReqDTO branch)
+        {
+
+            try
+            {
+                await _branchService.AddAsync(branch);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.ToString());
+            }
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateBranch(BranchesReqDTO branch)
         {
             try
             {
-                var results = await _uow.BranchesRepository.GetAsync(id);
-                //usrSrvcs.Commit();
-                _logger.LogInformation($"Returned branch from database with id:{id}.");
-                return Ok(results);
+                await _branchService.UpdateAsync(branch);
+                return Ok();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                _logger.LogError($"Transaction Failed! Something went wrong inside GetByID() action: {ex.Message}");
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error");
             }
         }

@@ -18,11 +18,11 @@ namespace Project2.DAL.Configs
 
             builder.HasOne(b => b.book)
                 .WithMany(c => c.comments)
-                .HasForeignKey(c => c.bookID);
+                .HasForeignKey(c => c.book_id);
 
-            builder.HasOne(u => u.user) // user has many comments | comments FK => userID
-                .WithMany(c => c.comments)
-                .HasForeignKey(c => c.userID);
+            //builder.HasOne(u => u.user) // user has many comments | comments FK => userID
+            //    .WithMany(c => c.comments)
+            //    .HasForeignKey(c => c.userID);
 
             builder.Property(c => c.text).HasMaxLength(255);
 

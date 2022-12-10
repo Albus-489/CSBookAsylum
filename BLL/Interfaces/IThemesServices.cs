@@ -8,11 +8,11 @@ using Project1.BLL.DTO.Res;
 
 namespace Project1.BLL.Interfaces
 {
-    public interface IThemesServices<T>
+    public interface IThemesServices
     {
-        Task<IEnumerable<ThemesResDTO>> GetAllByOrderIdAsync(long id);
-        Task<long> AddAsync(ThemesReqDTO post);
-        Task UpdateAsync(ThemesReqDTO post);
+        Task<IEnumerable<ThemesResDTO>> GetAllThemes();
+        Task AddAsync(ThemesReqDTO theme);
+        Task UpdateAsync(ThemesReqDTO theme);
         Task DeleteAsync(long id);
     }
 }

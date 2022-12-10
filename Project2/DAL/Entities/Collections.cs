@@ -9,8 +9,7 @@ namespace Project2.DAL.Entities
     public class Collections : EntityBase
     {
         public string name { get; set; }
-        public string userID { get; set; }
-        public Users user { get; set; }
+        public string? user_id { get; set; }
 
         public int? rating { get; set; }
 

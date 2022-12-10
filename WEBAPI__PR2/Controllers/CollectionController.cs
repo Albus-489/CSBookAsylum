@@ -1,5 +1,5 @@
-﻿using BLL_Project2.DTO.Requests;
-using BLL_Project2.Interfaces;
+﻿using BLLP2.DTO.Req;
+using BLLP2.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Project2.DAL.Entities;
 using Project2.DAL.Interfaces;
@@ -11,26 +11,65 @@ namespace WEBAPI__PR2.Controllers
     public class CollectionController : ControllerBase
     {
         private readonly ILogger<Collections> _logger;
-        private readonly IUnitOfWork UOW;
-        private readonly ICollectionService _collectionService;
+        //private readonly IUnitOfWork UOW;
+        private readonly ICollectionService _CollectionService;
 
-
-        public CollectionController(ICollectionService _collectionService, ILogger<Collections> logger)
+        public CollectionController(ICollectionService CollectionService, ILogger<Collections> logger)
         {
-            this._collectionService = _collectionService;
+            //this.UOW = uow;
             _logger = logger;
+            _CollectionService = CollectionService;
         }
 
-        [HttpGet("GetAll")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> GetAllAsync()
+        [HttpPost]
+        public async Task<IActionResult> AddCollectionAsync([FromBody] CollectionReqDTO requestDto)
         {
-
             try
             {
-                var result = await _collectionService.GetAllAsync();
+                await _CollectionService.AddAsync(requestDto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateCollectionAsync([FromBody] CollectionReqDTO requestDto)
+        {
+            try
+            {
+                await _CollectionService.UpdateAsync(requestDto);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCollectionAsync(int id)
+        {
+            try
+            {
+                await _CollectionService.DeleteAsync(id);
+
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { e.Message });
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCollectionById(int id)
+        {
+            try
+            {
+                var result = await _CollectionService.GetByIdAsync(id);
 
                 return Ok(result);
             }
@@ -40,18 +79,13 @@ namespace WEBAPI__PR2.Controllers
             }
         }
 
-        [HttpPost("CreateCollection")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> AddOfferAsync([FromBody] CollectionReqDTO collection)
+        [HttpGet]
+        public async Task<IActionResult> GetAllAsync()
         {
-
             try
             {
-                await _collectionService.AddAsync(collection);
-
-                return Ok();
+                var results = await _CollectionService.GetAllAsync();
+                return Ok(results);
             }
             catch (Exception e)
             {

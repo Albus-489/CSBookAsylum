@@ -16,15 +16,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+//DAL repos
 builder.Services.AddTransient<IBranchesRepository, BranchesRepository>();
-builder.Services.AddTransient<IUsersRepository, UsersRepository>();
 builder.Services.AddTransient<IThemesRepository, ThemesRepository>();
 builder.Services.AddTransient<IThemeMessageRepo, ThemeMessageRepo>();
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+//builder.Services.AddTransient<IUsersRepository, UsersRepository>();
 
-builder.Services.AddTransient<IUsersServices, UsersService>();
+
+//Services from BLL
+builder.Services.AddTransient<IBranchesServices, BranchService>();
+builder.Services.AddTransient<IThemeMessageServices, ThemeMessagesService>();
+builder.Services.AddTransient<IThemesServices, ThemesService>();
 
 builder.Services.AddMapper();
+builder.Services.AddCors(op => op.AddDefaultPolicy(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
 
 builder.Services.AddScoped((s) => new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IDbTransaction>(s =>
@@ -44,7 +51,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors();
 app.UseAuthorization();
 
 app.MapControllers();
