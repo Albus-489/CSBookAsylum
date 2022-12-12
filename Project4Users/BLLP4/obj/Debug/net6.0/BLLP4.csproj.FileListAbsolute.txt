@@ -1,0 +1,15 @@
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\bin\Debug\net6.0\BLLP4.deps.json
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\bin\Debug\net6.0\BLLP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\bin\Debug\net6.0\ref\BLLP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\bin\Debug\net6.0\BLLP4.pdb
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\bin\Debug\net6.0\DALP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\bin\Debug\net6.0\DALP4.pdb
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.csproj.AssemblyReference.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.GeneratedMSBuildEditorConfig.editorconfig
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.AssemblyInfoInputs.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.AssemblyInfo.cs
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.csproj.CoreCompileInputs.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.csproj.CopyComplete
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\ref\BLLP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\BLLP4\obj\Debug\net6.0\BLLP4.pdb
