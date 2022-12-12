@@ -94,7 +94,7 @@ var app = builder.Build();
 //Jwt Authentication
 //app.UseMiddleware<JwtMiddleware>();
 
-var key = Encoding.UTF8.GetBytes(builder.Configuration["ApplicationSettings:JWT_Secret"].ToString());
+//var key = Encoding.UTF8.GetBytes(builder.Configuration["ApplicationSettings:JWT_Secret"].ToString());
 
 
 // Configure the HTTP request pipeline.

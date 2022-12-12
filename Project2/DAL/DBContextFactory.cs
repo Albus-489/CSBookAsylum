@@ -14,7 +14,7 @@ namespace Project2.DAL
         {
             var optionsBuilder = new DbContextOptionsBuilder<DBContext>();
 
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Initial Catalog=csFirstProj;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Initial Catalog=csSecondProjBooks;Integrated Security=True;");
 
             return new DBContext(optionsBuilder.Options);
         }

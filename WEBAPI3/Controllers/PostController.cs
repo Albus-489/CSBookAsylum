@@ -32,7 +32,7 @@ namespace Project3.WEBAPI3.Controllers
             }
             catch (Exception ex)
             {
-                return Ok("Error in GetPostById()" + ex.Message);
+                return Ok("Error in GetPostById" + ex.Message);
             }
         }
     }

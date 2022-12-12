@@ -10,5 +10,6 @@ namespace BLLP2.DTO.Req
     {
         public int Id { get; set; }
         public string name { get; set; }
+        public int rating { get; set; }
     }
 }

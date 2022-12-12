@@ -37,165 +37,6 @@ namespace DAL.Migrations
                     b.ToTable("BookToCollection", (string)null);
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
-
-                    b.ToTable("Role", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "d4621b59-3b2d-491a-abbf-bf1a00806aaf",
-                            ConcurrencyStamp = "2484a068-189b-4e74-acb9-5c950d99de3c",
-                            Name = "SuperAdmin"
-                        },
-                        new
-                        {
-                            Id = "b8de88ef-61fa-4c04-bf93-a7a3f85d8d4c",
-                            ConcurrencyStamp = "650ee5c9-94ce-4030-84a3-8b8508b427b2",
-                            Name = "Admin"
-                        },
-                        new
-                        {
-                            Id = "2fb61bd0-c4db-473e-83b4-ca6e406a8a8e",
-                            ConcurrencyStamp = "b0e74734-3327-4267-bde6-fc852805d634",
-                            Name = "Moderator"
-                        },
-                        new
-                        {
-                            Id = "3f2dfd87-4f22-48a4-a22e-e41ee324b6d6",
-                            ConcurrencyStamp = "6d289a3d-1fc9-4add-ba19-77992bf0bd60",
-                            Name = "Basic"
-                        });
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RoleId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("RoleClaims", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserClaims", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
-                {
-                    b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("LoginProvider", "ProviderKey");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserLogins", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("RoleId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("UserId", "RoleId");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("UserRoles", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId", "LoginProvider", "Name");
-
-                    b.ToTable("UserTokens", (string)null);
-                });
-
             modelBuilder.Entity("Project2.DAL.Entities.Authors", b =>
                 {
                     b.Property<int>("Id")
@@ -229,8 +70,8 @@ namespace DAL.Migrations
                         {
                             Id = 1,
                             bio = "Some 1st bio",
-                            birth = new DateTime(2022, 6, 14, 0, 39, 25, 560, DateTimeKind.Local).AddTicks(2486),
-                            death = new DateTime(2022, 6, 14, 0, 39, 25, 560, DateTimeKind.Local).AddTicks(2560),
+                            birth = new DateTime(2022, 12, 10, 15, 40, 3, 160, DateTimeKind.Local).AddTicks(5877),
+                            death = new DateTime(2022, 12, 10, 15, 40, 3, 160, DateTimeKind.Local).AddTicks(5912),
                             name = "Name 1",
                             rating = 100
                         });
@@ -244,16 +85,19 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("authorId")
+                    b.Property<int?>("author_id")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("created")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("descriptionInfo")
+                    b.Property<string>("description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("genre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("name")
@@ -266,7 +110,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("authorId");
+                    b.HasIndex("author_id");
 
                     b.ToTable("Books");
 
@@ -274,7 +118,7 @@ namespace DAL.Migrations
                         new
                         {
                             Id = 1,
-                            descriptionInfo = "No info 1",
+                            description = "No info 1",
                             genre = "Preview genre 1",
                             name = "Preview book 1",
                             rating = 2
@@ -282,7 +126,7 @@ namespace DAL.Migrations
                         new
                         {
                             Id = 2,
-                            descriptionInfo = "No info 2",
+                            description = "No info 2",
                             genre = "Preview genre 2",
                             name = "Preview book 2",
                             rating = 90
@@ -302,16 +146,13 @@ namespace DAL.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<int>("rating")
+                    b.Property<int?>("rating")
                         .HasColumnType("int");
 
-                    b.Property<string>("userID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("user_id")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("userID");
 
                     b.ToTable("Collections");
                 });
@@ -324,7 +165,7 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("bookID")
+                    b.Property<int>("book_id")
                         .HasColumnType("int");
 
                     b.Property<int>("rating")
@@ -335,115 +176,14 @@ namespace DAL.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<string>("userID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("user_id")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("bookID");
-
-                    b.HasIndex("userID");
+                    b.HasIndex("book_id");
 
                     b.ToTable("Comments");
-                });
-
-            modelBuilder.Entity("Project2.DAL.Entities.Users", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("Rating")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
-
-                    b.Property<int>("UsernameChangeLimit")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "5c7b5fd7-b969-4170-bf24-d959d12e734f",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "56d4dea7-352a-4dad-bcea-f5964f484ff0",
-                            Email = "superadmin@gmail.com",
-                            EmailConfirmed = true,
-                            FirstName = "super",
-                            LastName = "admin",
-                            LockoutEnabled = false,
-                            PhoneNumberConfirmed = true,
-                            Rating = 0,
-                            SecurityStamp = "5b1f24f6-7345-43ad-ac9c-37de503ff2e0",
-                            TwoFactorEnabled = false,
-                            UserName = "superadmin",
-                            UsernameChangeLimit = 25
-                        });
                 });
 
             modelBuilder.Entity("BooksCollections", b =>
@@ -461,134 +201,24 @@ namespace DAL.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.HasOne("Project2.DAL.Entities.Users", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
-                {
-                    b.HasOne("Project2.DAL.Entities.Users", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
-                        .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Project2.DAL.Entities.Users", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
-                {
-                    b.HasOne("Project2.DAL.Entities.Users", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Project2.DAL.Entities.Books", b =>
                 {
                     b.HasOne("Project2.DAL.Entities.Authors", "author")
                         .WithMany("books")
-                        .HasForeignKey("authorId");
+                        .HasForeignKey("author_id");
 
                     b.Navigation("author");
-                });
-
-            modelBuilder.Entity("Project2.DAL.Entities.Collections", b =>
-                {
-                    b.HasOne("Project2.DAL.Entities.Users", "user")
-                        .WithMany()
-                        .HasForeignKey("userID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("Project2.DAL.Entities.Comments", b =>
                 {
                     b.HasOne("Project2.DAL.Entities.Books", "book")
                         .WithMany("comments")
-                        .HasForeignKey("bookID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Project2.DAL.Entities.Users", "user")
-                        .WithMany("comments")
-                        .HasForeignKey("userID")
+                        .HasForeignKey("book_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("book");
-
-                    b.Navigation("user");
-                });
-
-            modelBuilder.Entity("Project2.DAL.Entities.Users", b =>
-                {
-                    b.OwnsMany("DAL.Entities.RefreshToken", "RefreshTokens", b1 =>
-                        {
-                            b1.Property<int>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("int");
-
-                            SqlServerPropertyBuilderExtensions.UseIdentityColumn(b1.Property<int>("Id"), 1L, 1);
-
-                            b1.Property<DateTime>("Created")
-                                .HasColumnType("datetime2");
-
-                            b1.Property<DateTime>("Expires")
-                                .HasColumnType("datetime2");
-
-                            b1.Property<DateTime?>("Revoked")
-                                .HasColumnType("datetime2");
-
-                            b1.Property<string>("Token")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("UsersId")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(450)");
-
-                            b1.HasKey("Id");
-
-                            b1.HasIndex("UsersId");
-
-                            b1.ToTable("RefreshToken");
-
-                            b1.WithOwner()
-                                .HasForeignKey("UsersId");
-                        });
-
-                    b.Navigation("RefreshTokens");
                 });
 
             modelBuilder.Entity("Project2.DAL.Entities.Authors", b =>
@@ -597,11 +227,6 @@ namespace DAL.Migrations
                 });
 
             modelBuilder.Entity("Project2.DAL.Entities.Books", b =>
-                {
-                    b.Navigation("comments");
-                });
-
-            modelBuilder.Entity("Project2.DAL.Entities.Users", b =>
                 {
                     b.Navigation("comments");
                 });

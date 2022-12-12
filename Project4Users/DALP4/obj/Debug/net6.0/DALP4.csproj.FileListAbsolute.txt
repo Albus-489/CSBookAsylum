@@ -1,0 +1,14 @@
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.csproj.AssemblyReference.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.GeneratedMSBuildEditorConfig.editorconfig
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.AssemblyInfoInputs.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.AssemblyInfo.cs
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.csproj.CoreCompileInputs.cache
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\bin\Debug\net6.0\DALP4.deps.json
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\bin\Debug\net6.0\DALP4.runtimeconfig.json
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\bin\Debug\net6.0\DALP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\bin\Debug\net6.0\ref\DALP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\bin\Debug\net6.0\DALP4.pdb
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\ref\DALP4.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.pdb
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\Project4Users\DALP4\obj\Debug\net6.0\DALP4.genruntimeconfig.cache

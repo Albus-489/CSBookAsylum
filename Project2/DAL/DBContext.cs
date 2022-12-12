@@ -36,7 +36,7 @@ namespace Project2.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Initial Catalog=csFirstProj;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Initial Catalog=csSecondProjBooks;Integrated Security=True;");
         }
     }
 }
