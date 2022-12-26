@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  fpwebapi:
+    image: ${DOCKER_REGISTRY-}fpwebapi
+    build:
+      context: .
+      dockerfile: FPWEBAPI\Dockerfile
+    
+  webapi__2:
+    image: ${DOCKER_REGISTRY-}webapi__2
+    build:
+      context: .
+      dockerfile: WEBAPI__PR2\Dockerfile
+
+  webapi3:
+    image: ${DOCKER_REGISTRY-}webapi3
+    build:
+      context: .
+      dockerfile: WEBAPI3\Dockerfile
+  
+  apip4:
+    image: ${DOCKER_REGISTRY-}apip4
+    build:
+      context: .
+      dockerfile: Project4Users\APIP4\Dockerfile

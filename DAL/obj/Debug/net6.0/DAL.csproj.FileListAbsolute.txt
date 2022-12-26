@@ -50,3 +50,4 @@ C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\DAL\bin\Debug\net6.0\M
 C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\DAL\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\DAL\bin\Debug\net6.0\AutoMapper.dll
 C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\DAL\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\DAL\bin\Debug\net6.0\RabbitMQ.Client.dll

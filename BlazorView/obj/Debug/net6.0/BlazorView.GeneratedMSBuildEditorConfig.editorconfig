@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorView
 build_property.RootNamespace = BlazorView
-build_property.ProjectDir = C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\BlazorView\
+build_property.ProjectDir = Q:\E-drive-66406\csFirstProjSLN\BlazorView\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\D-drive-71593\3_Kvain_3\Kvain_C#\Second\csFirstProjSLN\BlazorView
+build_property.MSBuildProjectDirectory = Q:\E-drive-66406\csFirstProjSLN\BlazorView
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/App.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/Counter.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/FetchData.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/ForumPage.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/ForumPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ydW1QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/Index.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/UserPage.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/UserPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Shared/SurveyPrompt.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/_Imports.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Shared/MainLayout.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-o7pwigkbop
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Shared/NavMenu.razor]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-k470ozn0po
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/Error.cshtml]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/_Host.cshtml]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/D-drive-71593/3_Kvain_3/Kvain_C\#/Second/csFirstProjSLN/BlazorView/Pages/_Layout.cshtml]
+[Q:/E-drive-66406/csFirstProjSLN/BlazorView/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

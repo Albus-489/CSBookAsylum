@@ -2908,11 +2908,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "Q:\\E-drive-66406\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "Q:\\E-drive-66406\\csFirstProjSLN\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
-      "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\Infrastructure\\obj\\",
+      "outputPath": "Q:\\E-drive-66406\\csFirstProjSLN\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2929,8 +2929,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj": {
-              "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj"
+            "Q:\\E-drive-66406\\csFirstProjSLN\\App\\App.csproj": {
+              "projectPath": "Q:\\E-drive-66406\\csFirstProjSLN\\App\\App.csproj"
             }
           }
         }
@@ -2959,7 +2959,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.112\\RuntimeIdentifierGraph.json"
       }
     }
   }

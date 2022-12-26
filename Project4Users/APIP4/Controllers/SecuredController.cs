@@ -11,7 +11,7 @@ namespace APIP4.Controllers
         [HttpGet]
         public async Task<IActionResult> GetSecuredData()
         {
-            return Ok("This Secured Data is available only for Authenticated Users.");
+            return Ok("Secured data is now available");
         }
     }
 }

@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\bavrz\.nuget\packages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgRabbitMQ Condition=" '$(PkgRabbitMQ)' == '' ">C:\Users\bavrz\.nuget\packages\rabbitmq\3.6.2</PkgRabbitMQ>
+  </PropertyGroup>
 </Project>

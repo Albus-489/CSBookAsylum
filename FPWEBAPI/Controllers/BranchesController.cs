@@ -66,7 +66,7 @@ namespace FPWEBAPI.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("Edit")]
         public async Task<ActionResult> UpdateBranch(BranchesReqDTO branch)
         {
             try

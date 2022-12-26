@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\BlazorView\\BlazorView.csproj": {}
+    "Q:\\E-drive-66406\\csFirstProjSLN\\BlazorView\\BlazorView.csproj": {}
   },
   "projects": {
-    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\BlazorView\\BlazorView.csproj": {
+    "Q:\\E-drive-66406\\csFirstProjSLN\\BlazorView\\BlazorView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\BlazorView\\BlazorView.csproj",
+        "projectUniqueName": "Q:\\E-drive-66406\\csFirstProjSLN\\BlazorView\\BlazorView.csproj",
         "projectName": "BlazorView",
-        "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\BlazorView\\BlazorView.csproj",
+        "projectPath": "Q:\\E-drive-66406\\csFirstProjSLN\\BlazorView\\BlazorView.csproj",
         "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
-        "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\BlazorView\\obj\\",
+        "outputPath": "Q:\\E-drive-66406\\csFirstProjSLN\\BlazorView\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.112\\RuntimeIdentifierGraph.json"
         }
       }
     }

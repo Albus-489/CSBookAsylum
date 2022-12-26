@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RzZHyBl77u1txM9Q9clheHwK0Sth6AgYffAblbIcukJgCajXsl6woNLJJ5f2f7GAhybCeCF+0u6SRXx6LZcUPg==",
+  "dgSpecHash": "rHkg5qnFt7dcxlixx5iZxbbVcXMQQOFkUSwdGNoI0ofg4DSzSmSbSxMvPWaC6YHs6Ji7h0SHo+CN1RA4qw2Hyg==",
   "success": true,
-  "projectFilePath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\App\\App.csproj",
+  "projectFilePath": "Q:\\E-drive-66406\\csFirstProjSLN\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bavrz\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\bavrz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

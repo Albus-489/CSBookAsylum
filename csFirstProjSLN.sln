@@ -37,9 +37,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project4Users", "Project4Us
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DALP4", "Project4Users\DALP4\DALP4.csproj", "{CDC4653D-A86F-4327-A6E1-35C578627CC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLLP4", "Project4Users\BLLP4\BLLP4.csproj", "{59CCA3AA-BCAE-481C-A3B1-007D3D35B6FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLLP4", "Project4Users\BLLP4\BLLP4.csproj", "{59CCA3AA-BCAE-481C-A3B1-007D3D35B6FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIP4", "Project4Users\APIP4\APIP4.csproj", "{1D7E6D9A-0AAF-49F8-9588-3DEA6B29E4B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIP4", "Project4Users\APIP4\APIP4.csproj", "{1D7E6D9A-0AAF-49F8-9588-3DEA6B29E4B8}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D31B4E13-092E-4DCE-965E-95A6C505E5C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +109,10 @@ Global
 		{1D7E6D9A-0AAF-49F8-9588-3DEA6B29E4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D7E6D9A-0AAF-49F8-9588-3DEA6B29E4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7E6D9A-0AAF-49F8-9588-3DEA6B29E4B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31B4E13-092E-4DCE-965E-95A6C505E5C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31B4E13-092E-4DCE-965E-95A6C505E5C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31B4E13-092E-4DCE-965E-95A6C505E5C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31B4E13-092E-4DCE-965E-95A6C505E5C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

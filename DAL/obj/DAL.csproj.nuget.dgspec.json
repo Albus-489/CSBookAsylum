@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\DAL\\DAL.csproj": {}
+    "Q:\\E-drive-66406\\csFirstProjSLN\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\DAL\\DAL.csproj": {
+    "Q:\\E-drive-66406\\csFirstProjSLN\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\DAL\\DAL.csproj",
+        "projectUniqueName": "Q:\\E-drive-66406\\csFirstProjSLN\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\DAL\\DAL.csproj",
+        "projectPath": "Q:\\E-drive-66406\\csFirstProjSLN\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\bavrz\\.nuget\\packages\\",
-        "outputPath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\DAL\\obj\\",
+        "outputPath": "Q:\\E-drive-66406\\csFirstProjSLN\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bavrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,6 +52,14 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "RabbitMQ": {
+              "target": "Package",
+              "version": "[3.6.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[6.3.0, )"
@@ -72,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.112\\RuntimeIdentifierGraph.json"
         }
       }
     }

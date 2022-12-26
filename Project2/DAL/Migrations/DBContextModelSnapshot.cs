@@ -70,8 +70,8 @@ namespace DAL.Migrations
                         {
                             Id = 1,
                             bio = "Some 1st bio",
-                            birth = new DateTime(2022, 12, 10, 15, 40, 3, 160, DateTimeKind.Local).AddTicks(5877),
-                            death = new DateTime(2022, 12, 10, 15, 40, 3, 160, DateTimeKind.Local).AddTicks(5912),
+                            birth = new DateTime(2022, 12, 12, 15, 24, 10, 425, DateTimeKind.Local).AddTicks(2537),
+                            death = new DateTime(2022, 12, 12, 15, 24, 10, 425, DateTimeKind.Local).AddTicks(2572),
                             name = "Name 1",
                             rating = 100
                         });
@@ -165,10 +165,10 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("book_id")
+                    b.Property<int?>("book_id")
                         .HasColumnType("int");
 
-                    b.Property<int>("rating")
+                    b.Property<int?>("rating")
                         .HasColumnType("int");
 
                     b.Property<string>("text")
@@ -214,9 +214,7 @@ namespace DAL.Migrations
                 {
                     b.HasOne("Project2.DAL.Entities.Books", "book")
                         .WithMany("comments")
-                        .HasForeignKey("book_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("book_id");
 
                     b.Navigation("book");
                 });

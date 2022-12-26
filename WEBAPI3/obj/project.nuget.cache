@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ue/yPSjXw4jng4rOQ0VSWNxuFJ1nKZ/i3dET6gVvg5xCZlpEhAQAtm+2vcnecXW4sm/fw5EGNLTBgmpuFsjoYg==",
+  "dgSpecHash": "oZRXEFT5Eve7OtGkkFk1/KkFDO2ZUwQxOjNGE67aXrfSNeRUm1mqDU+TKEbTiUO++sev2sDMhdd8h4JF1ALycA==",
   "success": true,
-  "projectFilePath": "C:\\D-drive-71593\\3_Kvain_3\\Kvain_C#\\Second\\csFirstProjSLN\\WEBAPI3\\WEBAPI3.csproj",
+  "projectFilePath": "Q:\\E-drive-66406\\csFirstProjSLN\\WEBAPI3\\WEBAPI3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bavrz\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\bavrz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
@@ -68,6 +68,7 @@
     "C:\\Users\\bavrz\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\bavrz\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\bavrz\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\bavrz\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\bavrz\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\bavrz\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\bavrz\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
