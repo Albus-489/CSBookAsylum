@@ -52,7 +52,7 @@ namespace FPWEBAPI.Controllers
             }
         }
 
-        [HttpPost("Create")]
+        [HttpPost()]
         public async Task<ActionResult<long>> Post([FromBody] Themes theme)
         {
 
