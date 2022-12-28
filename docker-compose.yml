@@ -1,6 +1,15 @@
 version: '3.4'
 
 services:
+
+  sqldb:
+    image: mssql:latest
+    container_name: mssql_cs
+    restart: always
+    ports:
+    - 1433:1433
+    
+  
   fpwebapi:
     image: ${DOCKER_REGISTRY-}fpwebapi
     build:
