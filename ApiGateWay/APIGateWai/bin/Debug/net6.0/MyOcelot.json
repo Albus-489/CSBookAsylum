@@ -1,0 +1,119 @@
+﻿{
+  "Routes": [
+
+    //Forum Api
+    //Branches controller
+    {
+      "DownstreamPathTemplate": "/Branches",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Branch",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Branches/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Branch/Delete/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Branches/GetBranchById/{BranchId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Branch/GetBranchById/{BranchId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    //Theme controller
+    {
+      "DownstreamPathTemplate": "/Theme",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Theme",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Theme/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Theme/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/BranchRating/GetCountDislikeByBranchId/{BranchId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/BranchLike/CountDislikeByBranchId/{BranchId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    //ThemeMessage controller
+    {
+      "DownstreamPathTemplate": "/ThemeMessage",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/ThemeMessage",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/ThemeMessage/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/ThemeMessage/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/ThemeMessageRating/GetCountRatingInMessage/{ThemeMessageId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/BranchRating/CountRatingByBranchId/{ThemeMessageId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}

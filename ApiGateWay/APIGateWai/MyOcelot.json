@@ -1,0 +1,312 @@
+﻿{
+  "Routes": [
+
+    //Forum Api
+    //Branches controller
+    {
+      "DownstreamPathTemplate": "/Branches",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Branch",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Branches/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Branch/Delete/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Branches/GetBranchById/{BranchId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Branch/GetBranchById/{BranchId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Branches/GetAllBranches",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Branch/GetAll",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    //Theme controller
+    {
+      "DownstreamPathTemplate": "/Theme",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Theme",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Theme/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/Theme/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/ThemeRating/GetRatingByThemeId/{ThemeId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/ThemeRating/CountRatingByThemeId/{ThemeId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    //ThemeMessage controller
+    {
+      "DownstreamPathTemplate": "/ThemeMessage",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/ThemeMessage",
+      "UpstreamHttpMethod": [ "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/ThemeMessage/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/ThemeMessage/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/ThemeMessageRating/GetRatingByThemeMessageId/{ThemeMessageId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5113"
+        }
+      ],
+      "UpstreamPathTemplate": "/ThemeMessageRating/CountRatingByThemeMessageId/{ThemeMessageId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    //Lib Api
+    //Books controller
+    {
+      "DownstreamPathTemplate": "/api/Book",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Book",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Book/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Book/{id}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Book/GetPagedBooks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Book/GetPagedBooks",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    // Author controller
+    {
+      "DownstreamPathTemplate": "/api/Author",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Author",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Author/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Author/{id}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ] // DELETE and GETbyId are the same in root
+    },
+    {
+      "DownstreamPathTemplate": "/api/AuthorBooks/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/AuthorBooks/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // CollectionController
+    {
+      "DownstreamPathTemplate": "/api/Collections",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Collection",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Collection/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Collection/{id}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ] // DELETE and GETbyId are the same in root
+    },
+    {
+      "DownstreamPathTemplate": "/api/CollectionUsers/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/CollectionUsers/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/CollectionTags/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/CollectionTags/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // CommentController
+    {
+      "DownstreamPathTemplate": "/api/Comments",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Comment",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Comments/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Comment/{id}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ] // DELETE and GETbyId are the same in root
+    },
+    {
+      "DownstreamPathTemplate": "/api/CommentRating/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/CommentRating/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // Page Api
+    // Post controller
+    {
+      "DownstreamPathTemplate": "/api/PostById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5254"
+        }
+      ],
+      "UpstreamPathTemplate": "/Post/{id}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ] // DELETE and GETbyId are the same in root
+    }
+
+  ]
+}
